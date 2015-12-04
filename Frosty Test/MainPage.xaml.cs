@@ -90,6 +90,13 @@ namespace Frosty_Test
                     var dataPinValue = _dataPin.Read();
                     _clockPin.Write(GpioPinValue.Low);
 
+                    if (dataPinValue == GpioPinValue.Low)
+                    {
+                        var yay = true;
+                    }
+
+
+
                     this.txtOutput.Text += dataPinValue + "\n";
 
                     c++;
